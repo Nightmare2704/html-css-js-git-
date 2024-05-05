@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lists in html</h1>
+    <ol type="I"><!--Tag is used to print orderd list in html-->
+        <li>Apple</li>
+        <ul><!--Tag is used to print unorderd list in html-->
+            <li>color: Red</li>
+            <li>Season: Winter</li>
+
+        </ul>
+        <li>Mango</li>
+        
+        <ul>
+            <li>color: yellow</li>
+            <li>Season: Summer</li>
+
+        </ul>
+        <li>Litchi</li>
+    </ol>
+
+    <h1>Tables in html</h1>
+    <P> <pre>Tables are use to represent real life table date.
+    <br>   tr: this is used to display table row. 
+    <br>   td: this used to display table data.
+    <br>   th: this is used to display table header.</pre></P>
+<div>
+    <table border="5">
+     <thead>
+
+        <caption>Student data</caption>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Devesh</td>
+            <td>100</td>
+        </tr>
+        <tr colspan="2">
+            <td>Information</td>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>101</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<div>
+    <h2>forms in html </h2>
+    <p>Forms are used to collect data from the user.<br>Eg. Sign up/ login/ help request / contact me etc.
+    <form action="/action.php">
+        Enter your username or password <br>
+        <input type="text" placeholder="user name">
+       <br> <input type="password" placeholder="Enter you password">
+        <br>
+        Select your class<br>
+        <label for="101">
+        <input type="radio" value=" class XI" name="class" id="101"> class XI
+    </label>
+    <label for="102">
+        <input type="radio" name="class" value="Class XII" id="102"> class XII
+    </label>
+    <br>Select your subjects <br>
+    <label for="math">
+       <br> math<input type="checkbox" value="Math" name="subject" id="111">
+    </label>
+    <label for="physics">
+        <br>physics<input type="checkbox" value="phy" name="subject" id="112">
+    </label>
+    <label for="English">
+        <br>English<input type="checkbox" value="English" name="subject" id="103">
+    </label>
+    <label for="Chemistry">
+        <br>Chemistry<input type="checkbox" value="Chemistry" name="subject" id="104">
+    </label><br>
+    Select you city <br>
+    <select name="city">
+        <option value="Delihi">Delihi</option>
+        <option value="Solan">Solan</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Noyda">Noyda</option>
+        <option value="Ladakh">Ladakh</option>
+<br>
+    </select>
+    <label for="text area">
+        <textarea name="feedback" id="10" placeholder="Please give your feed back">feedback</textarea>
+    </label>
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=KzlTDaNYb-e0jOgz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+<video src="https://www.youtube.com/watch?v=HcOc7P5BMi4&t=3862s" controls loop>Video</video>
+    <button>Subbmit</button>
+    </p>
+</div>
+</body>
+</html>
