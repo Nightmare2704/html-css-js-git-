@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        /* it is a internal css */
+        ul {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: crimson;
+        }
+    </style>
+    <!-- it is an external css file  -->
+    <link rel="stylesheet" href="first.css">
+</head>
+
+<body>
+    <div>
+
+        <head >
+            <h1 class="head"style="color:red">CSS TUTORIAL</h1><!--inline css-->
+        </head>
+        <main>
+            <div class="head">
+                <H2>Including Style </H2>
+                <ul>
+                    <li>Inline CSS : Using style attribute we can give property to a tag.</li>
+                    <li>Internal CSS : Using style tag in the head of the page we can declare their properties and their
+                        values with the selector. </li>
+                    <li>External CSS : Using link tag we can link an external file to the html page and give properties
+                        on the external file with the use of selector.</li>
+                </ul>
+            </div>
+            <div class="head">
+                <h2>properties CSS </h2>
+                <ol>
+                    <li>Color Proper ties
+                        <ul>
+                            <li>Color property : Used to set the colour of foreground. eg. color:red;</li>
+                            <li>Background Color Property : Used to give color to the background. eg.
+                                background-color:black; </li>
+                        </ul>
+                    </li>
+                    <li>Text properties
+                        <ul>
+                            <li>text-align : text align :left/right/center.</li>
+                            <li>Text decoration :text-decoration:underline/overline/line-through</li>
+                            <li>Font weight: font-weight:normal/bold/bolder/lighter <br>font-weight:100-900</li>
+                            <li>Font Family : font-family:arial,roboto</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2 id="head3" class="head">Selectors </h3>
+                    <ul class="cl1">
+                        <li>Universal Selector: *{}. using astrisk we can give the entire page same style.</li>
+                        <li>Element Selector: By using Element selctor we can give the properties to all same tags in
+                            page. eg. h1{color: red;} all h1 will be red in the page.</li>
+                        <li>ID selector: By using id selector we can give property single specific element. eg.
+                            #idselector{color: grey}. the element with idselector id will get the property.
+                        </li>
+                        <li>Class Selector : If we want to give multiple elements same properties we can give them same
+                            class and define their properties. eg. .classSelector{
+                            color:green;}. This property will be applied to every element with the class classSelector.
+                        </li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Color System</h3>
+                <p>RGB: Red, blue, green . we can set the rgb value of the colors if we don't know the name of colour so
+                    we use the rgb values. <br>eg. rgb(255,0,0) (red), rgb(0,255,0) (green).</p>
+                <p>HEX (hexadecimal) : we also use the hex numbers to enter color or give the properties value in css.
+                    <br>eg. color :-#ff0000(red), color:-#00ff00(green)</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
