@@ -19,8 +19,8 @@
 <body>
     <div>
 
-        <head >
-            <h1 class="head"style="color:red">CSS TUTORIAL</h1><!--inline css-->
+        <head>
+            <h1 class="head" id="mainHead" style="color:red">CSS TUTORIAL</h1><!--inline css-->
         </head>
         <main>
             <div class="head">
@@ -34,22 +34,54 @@
                 </ul>
             </div>
             <div class="head">
-                <h2>properties CSS </h2>
+                <h2>Properties CSS </h2>
                 <ol>
-                    <li>Color Proper ties
+                    <li>Color Properties
                         <ul>
                             <li>Color property : Used to set the colour of foreground. eg. color:red;</li>
                             <li>Background Color Property : Used to give color to the background. eg.
                                 background-color:black; </li>
                         </ul>
                     </li>
-                    <li>Text properties
+                    <li>Text Properties
                         <ul>
                             <li>text-align : text align :left/right/center.</li>
                             <li>Text decoration :text-decoration:underline/overline/line-through</li>
                             <li>Font weight: font-weight:normal/bold/bolder/lighter <br>font-weight:100-900</li>
                             <li>Font Family : font-family:arial,roboto</li>
+                            <li>Font Size: to resize the text size. eg. font-size:20px;</li>
+                            <li>Line height: To adjust the gap b/w the lines.</li>
+                            <li>Text transform: to change the case of the text. eg. text-transform:uppercase;</li>
+
                         </ul>
+                        <li>Box Properties
+                            <ul>
+                                <li>Height : set the height of the box. eg. height:40px;</li>
+                                <li>width : it set's the width of the box/element. eg. width:40px;</li>
+                                <li>Border properties: used to set border properties like. Border size, border style, border color.
+                                    <ol type="i"><li>border-width:2px;</li>
+                                    <li>border-style: dotted/solid/dashed;</li>
+                                    <li>  border-color: black;</li>
+                                    <li>Border-shorthand: we can put all three proper ties in 1 line. eg. border: 2px black solid;</li>
+                                    <li>Border-radius: It makes the corners of the box round. border-radius: 5px;</li>
+                                    </ol>
+                                </li>
+
+                                    <li>Padding: Space between the content of the box and the border is padding.
+                                        <ol>
+                                            <li>padding-left:2px;</li>
+                                            <li>padding-right:2px;</li>
+                                            <li>padding-top:2px;</li>
+                                            <li>padding-bottom:2px;</li>
+                                            <li>Padding shorthand: if we want to give all four padding value same we can use "padding:20px;". This will set all padding to 20 px or we can use "padding : 1px 2px 3px 4px;" it works in clock wise direction.</li>
+                                        </ol>
+                                    </li>
+
+                                        <li>Margin: Space between two boxes is called margin.
+                                            
+                                        </li>
+                            </ul>
+                        </li>
                     </li>
                 </ol>
             </div>
@@ -69,11 +101,12 @@
                     </ul>
             </div>
             <div>
-                <h3>Color System</h3>
+                <h3 class="colourS">Color System</h3>
                 <p>RGB: Red, blue, green . we can set the rgb value of the colors if we don't know the name of colour so
                     we use the rgb values. <br>eg. rgb(255,0,0) (red), rgb(0,255,0) (green).</p>
                 <p>HEX (hexadecimal) : we also use the hex numbers to enter color or give the properties value in css.
-                    <br>eg. color :-#ff0000(red), color:-#00ff00(green)</p>
+                    <br>eg. color :-#ff0000(red), color:-#00ff00(green)
+                </p>
             </div>
         </main>
     </div>
