@@ -54,12 +54,14 @@
                             <li>Text transform: to change the case of the text. eg. text-transform:uppercase;</li>
 
                         </ul>
+                    </li>
+                    
                         <li>Box Properties
                             <ul>
                                 <li>Height : set the height of the box. eg. height:40px;</li>
                                 <li>width : it set's the width of the box/element. eg. width:40px;</li>
                                 <li>Border properties: used to set border properties like. Border size, border style, border color.
-                                    <ol type="i"><li>border-width:2px;</li>
+                                    <ol class="order2" ><li>border-width:2px;</li>
                                     <li>border-style: dotted/solid/dashed;</li>
                                     <li>  border-color: black;</li>
                                     <li>Border-shorthand: we can put all three proper ties in 1 line. eg. border: 2px black solid;</li>
@@ -68,7 +70,7 @@
                                 </li>
 
                                     <li>Padding: Space between the content of the box and the border is padding.
-                                        <ol>
+                                        <ol class="order2">
                                             <li>padding-left:2px;</li>
                                             <li>padding-right:2px;</li>
                                             <li>padding-top:2px;</li>
@@ -78,13 +80,83 @@
                                     </li>
 
                                         <li>Margin: Space between two boxes is called margin.
-                                            
-                                        </li>
+                                            <ol class="order2">
+                                                <li>margin-left:2px;</li>
+                                                <li>margin-right:2px;</li>
+                                                <li>margin-top:2px;</li>
+                                                <li>margin-bottom:2px;</li>
+                                                <li>Margin shorthand: if we want to give all four margin value same we can use "margin :20px;". This will set all margin to 20 px or we can use "Margin : 1px 2px 3px 4px;" it works in clock wise direction.</li>
+                                            </ol></li>
+                                        
                             </ul>
                         </li>
-                    </li>
+                        <li>
+                            Display Property: used to change the type of elements to inline to block or none. eg. display:inline/block/inline-block/none;.
+                            <ul>
+                                <li>inline - Takes only the space required by the element. (no margin/ padding).</li>
+                                <li>block - Takes full space available in width.</li>
+                                <li>inline-block - Similar to inline but we can set margin and padding.</li>
+                                <li>none - To remove element from document flow.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Visibility Property: when the visibility is set to none , space for the element is reserved. But for display none, no space is reserved or blocked for the element.eg. visiblity:hidden;
+                        </li>
+                        <li>
+                            Position Property: The position CSS property sets how an element is positioned in a document.
+                            eg. position: static/relative/absolute/fixed;.
+                            <ul>
+                                <li>Static - default position(The top,right,bottom,left,and z-index properties have no effect).</li>
+                                <li>Relative - Element is relative to itself.(The top, right, bottom, left, and z-axis will work)</li>
+                                <li>absolute - Position relative to its closest positioned ancestor, (removed from the flow)</li>
+                                <li>Fixed - Positioned relative to browser. (removed from flow).</li>
+                                <li>Sticky- Position based on user's scroll position.</li>
+                                <li>top : we can change distance from top. Does not work in static position. </li>
+                                <li>right : we can change distance from right. Does not work in static position. </li>
+                                <li>bottom :  we can change distance from bottom. Does not work in static position. </li>
+                                <li>left :  we can change distance from left. Does not work in static position. </li>
+                                <li>z-index: it decides the stack level of elements. Overlapping elements with larger z-index cover those with a smaller one.eg. z-index:auto(0);
+                                    , z-index:1/2/..;, z-index: -1/-2/...;</li>
+                            </ul>
+                        </li>
+                        <li>Background Image: used to set an image as background. eg. background-image:url("image.jpeg");
+                            <ul><li>background-size:cover/contain/auto;</li>
+                            <li>background-repeat:no-repeat;</li></ul>
+                        </li>
+                        <li>Flexbox: Flexible Box Layout. It is a one-dimensional layout method for arranging items in rows or columns.
+                            <ul><li>display:flex;</li>
+                            <li>flex directions
+                                <ol class="order2"><li>flex-direction:row;</li>
+                                <li>flex-direction:row-reverse;</li>
+                            <li>flex-direction:column;</li>
+                        <li>flex-direction:column-reverse;</li></ol>
+                            </li>
+                        <li>Flex Properties: for flex container
+                            <ol class="order2">
+                                <li>justify-content:alignment along the main axis. <br>flex-start/flex-end/center/space-evenly/space-arround</li>
+                                <li>flex-wrap:nowrap/wrap/wrap-reverse;</li>
+                                <li>align-item: alignment along the cross axis.</li>
+                                <li>align-content: alignment of space between & around the conten along cross-axix.</li>
+                            </ol>
+                            <li>Flex Properties for flex items
+                                <ol class="order2"><li>align-self: alignment of individual along the cross axis.eg.align-self:</li>
+                                <li>flex-grow: how much a flex item will grow relative to the rest of the flex items if space available.eg.flex-grow:2;</li>
+                                <li>flex-shrink: how much a flex item will shrink relative to the rest of the flex items if space available. flex:shrink:2;</li></ol>
+                            </li>
+                        </li>
+                    </ul>
+                 </li>
+                 <li>Media Queries: Help create a responsive website.
+                    eg.
+                    <br> @media(min-width:600px){ <br>
+                        div{<br>
+                            background-color:green;<br>
+                        } <br>
+                    }
+                 </li>
                 </ol>
             </div>
+            
             <div>
                 <h2 id="head3" class="head">Selectors </h3>
                     <ul class="cl1">
@@ -101,12 +173,23 @@
                     </ul>
             </div>
             <div>
+                <h3>Units in CSS</h3>
+                <h4>Relative Units</h4>
+                <ul><li>Percentage(%) : It is often used to define a size as relative to an element's parent object. eg. width:33%;margin:50%;</li>
+                    <li>Em:Font size of parent, in the case of typographical properties like font-size, and font size of element itself, in this case of other properties like width. eg.font-size:2em; it means 2x size of parent text. </li>
+                    <li>rem : Font size of root element. Sets the size according to the root tag .</li>
+                    <li>vh : it gives size according to view port height.  </li>
+                    <li>vw : it gives size accorgint to the view prot width.</li>
+                </ul>
+            </div>
+            <div>
                 <h3 class="colourS">Color System</h3>
                 <p>RGB: Red, blue, green . we can set the rgb value of the colors if we don't know the name of colour so
                     we use the rgb values. <br>eg. rgb(255,0,0) (red), rgb(0,255,0) (green).</p>
                 <p>HEX (hexadecimal) : we also use the hex numbers to enter color or give the properties value in css.
                     <br>eg. color :-#ff0000(red), color:-#00ff00(green)
                 </p>
+                <p>RGBA: Red , blue , green , alpha. in here alpha control the opacity of the color. we can select its value between 0 to 1. eg. background-color: rgba(233 19 12 0.5);</p>
             </div>
         </main>
     </div>
