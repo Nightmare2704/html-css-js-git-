@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            background-color: black;
+            font-family: cursive;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(214, 99, 4);
+        }
+
+        ul {
+            color: goldenrod;
+        }
+
+        pre {
+            border: 2px solid rgb(126, 211, 15);
+            color: aliceblue;
+            background-color: rgb(37, 33, 33);
+            display: inline-table;
+            border-radius: 10px;
+            padding-right:30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script </title>
+</head>
+
+<body>
+    <h1>Java script</h1>
+    <ul>
+        <li>console.log("hello world"); :- It is uesd to print strings in java script.</li>
+        <li>Variables in JS: variables are containers for data. eg. age=24; name="Tony stark";.
+            <br>Keywork for defining variables in javascript:-
+            <ol>
+                <li>var: Variable can be re-declared & updated. A global scope variable.</li>
+                <li>let: Variable cannot be re-declared but can be updated. A block scope variable.</li>
+                <li>const: Variable cannot ber re-declared or updated. A block scope variable.</li>
+            </ol>
+        </li>
+        <li>
+            Data types in js:
+            <ol type="I">
+                <li>Primitive Data type: these are pre defined data types.
+                    <ol>
+                        <li>Numbers : stores numbers in java script. let a=23, b=2.1 etc.</li>
+                        <li>String : Stores the string values. name="tony stark";.</li>
+                        <li>Boolean: it stores value in true or false. eg. a=true/false; . </li>
+                        <li>null: stores null value. c=null;.</li>
+                        <li>undefined: the value of the variable is not give then it is undfined. let=y;</li>
+                        <li>BigInt: uset to store bit integer values. let x=BigInt("123"); . </li>
+                        <li> Symbol: stored values used as symbol. eg. let y= Symbol("hello!"); .</li>
+                    </ol>
+                </li>
+                <li>Non Primitive Data types: These data types derived from primitive data types.
+                    <ol>
+                        <li>Objects: it is a collections of values. eg. const student={name: "devesh",age:20, cgpa: 20};
+                            . We can access this object by it's name student and if we want any specific value we can
+                            access it using studen.name or studnet['name'] .</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Operators in JS : Used to perform some operation on data.
+            <ol type="a">Types on the bases of operand used
+                <li>Urinary Operator:- it works on only one operand. eg. increment , decrement operators. </li>
+                <li>Binary Operatos:- It works on the two operands. eg +,-,* etc are some examples of binary operators.
+                </li>
+                <li>Ternary Operators:- It works on the three operand. eg. let result= age>=18 ? "adult":"not adult";
+                </li>
+            </ol>
+            <ol>Types of operators based on use of operator
+                <li>Arithmetic Operators:- use to perform arithmetic operations in javascript. eg. +,-,*,/, Modulus,
+                    Exponentiation, Increment and Decrement are some operators used to perform arithmatic operators.
+                </li>
+                <li>Assignment Operators:- use to assign values to the variables.= is the commonly used assignment
+                    operator. eg. a=b, a+=b, a-=b, a*=b, a/=b, a**=b .</li>
+                <li>Comparison Operators:- use to compare valuses from each other. a==b,a===b(on basis of data type), a
+                    <=b, a>=b, a< b, a>b, a!=b.</b>
+                </li>
+                <li>Logical Operator:- used to perform logical operation. Logican and (&&) , Logical or(||), Logical
+                    Not(!).</li>
+            </ol>
+        </li>
+        <li>Condintional Statements: used to implement some condition in the code.
+            <ol>
+                <li>if Statement: <br> <code><pre>
+                let age =25;
+                if(age>=18){
+                    console.log("You can vote");
+                }</pre>
+            </code></li>
+                <li>if-else-Statement:- <br>
+                    <code><pre>
+                    let age =25;
+                    if(age>=18){
+                        console.log("You can vote");
+                    }
+                    else{
+                        console.log("you are not eligible to vote")
+                    }
+                </pre>
+                </code>
+                </li>
+                <li>else-if Statement:-
+                    <br><code><pre>
+                    let age =25;
+                    if(age>=18){
+                        console.log("You can drive");
+                    }
+                    elseif(age>75){
+                        console.log("you are age is too much you have to take test before driving")
+                    }
+                    else{
+                        console.log("you are not eligible for driving")
+                    }
+                
+                </pre>
+                </code>
+                </li>
+            </ol>
+
+        </li>
+        <li>
+            Switch case Statement: It checks value of the single expression and match the value with the condition and
+            run the condition on the basis of value.
+            <br>
+            <pre>
+            let a=2;
+            switch(a){
+                case 1: 
+                console.log("It is 1");
+                break;
+                case 2:
+                console.log("it is case 2");
+                break
+                default:
+                console.log("no case");
+            }
+        </pre>
+        </li>
+        <li>Prompt: prompt is used to take input from user .
+            <br>
+            <pre>prompt("Enter your name")</pre>
+        </li>
+        <li>
+            Loops in javascript:- loops are used to execute peace of code again and again.
+            <ol>
+                <li>for Loop :
+                    <br>
+                    <Pre>
+                for(let a=1; a<=5;a++){
+                    console.log(a);
+                       }</Pre>
+                </li>
+                <li>
+                    While loop:
+                    <br>
+                    <Pre>
+                    let i=0;
+                    while(i<=5){
+                        console.log(i);
+                        i++;
+                    }
+                    </Pre>
+                </li>
+                <li>Do-while loop:
+                    <br>
+                    <pre>
+                        let i=0;
+                        do{
+                            console.log(i);
+                            i++;
+                        }
+                        while(i<=5);
+                    </pre>
+                </li>
+                <li>for-of loop:
+                <br><pre>for(let val of strVar){
+                    //do some works
+                         }
+                </pre> 
+                <br>Used to print arrays or strings.
+            </li>
+            <li>For-in loop:
+                <br><pre>
+                    for(let val in obj1){
+                        console.log(val);
+                    }
+                </pre><br>Used to print Objects.
+            </li>
+            </ol>
+        </li>
+        <li>Strings in javascript: String is a sequence of character used to represent text. <br>
+            <ol>
+            <li><pre>
+                let str="Devesh"      //"Create String" used to create String
+                str.length            //"String Length" used to find the length of String
+                str[0],str[1],str[2]  //"String Indices" Used to access single element of the string
+            </pre></li>
+            <li>Templet Literals in Javascript:- A way to embedded experssion in strings.
+                <br><pre>
+                    `this is a templet literal.`</pre><br>
+                String Interpolation:- To create a string by doing substitution of a placeholder.
+              <br>  <pre>
+                `string text ${expression} string text`</pre>
+            </li>
+            <li>String Methods in javascript:- These are built in functions to manipulate a string.
+                <ol type="a">
+                    <li>str.toUpperCase() : this converts the string to the upper case.
+                        <br><pre>
+                            let str="Night Hunter";
+                            let str2=str.toUpperCase();
+                        </pre>
+                    </li>
+                    <li>str.toLowerCase() : This method converts the string to lower case.
+                        <br><pre>
+                            let str="Night Hunter";
+                            let str2=str.toLowerCase();
+                        </pre>
+                    </li>
+
+                    <li>str.trim() : This method removes the Spaces between the strigs.
+                        <br><pre>
+                            let str="Night Hunter";
+                            let str2=str.trim();
+                        </pre>
+                    </li>
+                    <li>str.slice(start,end) : This method return the sub string of the main string.
+                        <br><pre>
+                            let str="Night Hunter";
+                            let str2=str.slice(0,5); //end index is not included
+                        </pre>
+                    </li>
+                    <li>
+                        str1.concat(str2) :- Used to add to strings in this case str1 and str2 will be concatenated with each other.
+                        <br><pre>
+                            let str1="Night";
+                            let str2="Hunter";
+                            str3=str1.concat(str2);
+                        </pre>
+                    </li>
+                    <li>str.replace(searchVal, newVal):- used to replace the part of the string.
+                        <br><pre>
+                            let ser="Night Mair";
+                            let strReplaced=ser.replace(Mair,Hunter); //Mair will be changed with Hunter
+                        </pre>
+                    </li>
+                    <li>str.charAt(index) :- used to find out which character is on the given index number.
+                        <br><pre>
+                            let str="Night Hunter";
+                            st.charAt(6); //It will give the character present at 6th index no.
+                        </pre>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        </li>
+        <li>
+            Arrays in Javascript:- array is a collections of items. Array is a special value objects.
+            <br>Create Array <br>
+            <pre>
+                let marks=[89,34,45,56];
+                let info=[12,"Rahul","Delhi"];
+                console.log(info[2]); //It will print Delhi because it on the index 2.
+            </pre>
+            Strings are inmutable in js and Arrays are mutable.
+        </li>
+
+    </ul>
+</body>
+
+</html>
